@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- color of address bar in mobile browser -->
+  <meta name="theme-color" content="#28292C">
+  <!-- favicon  -->
+  <link rel="shortcut icon" href="img/thumbnail.ico" type="image/x-icon">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
+  <!-- font awesome css -->
+  <link rel="stylesheet" href="css/plugins/font-awesome.min.css">
+  <!-- swiper css -->
+  <link rel="stylesheet" href="css/plugins/swiper.min.css">
+  <!-- fancybox css -->
+  <link rel="stylesheet" href="css/plugins/fancybox.min.css">
+  <!-- mapbox css -->
+  <link href="css/plugins/mapbox-style.css" rel='stylesheet'>
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Quarty</title>
+</head>
+
+<body>
+
+  <div class="qrt-app">
+    <div class="qrt-preloader">
+      <div class="qrt-preloader-content">
+        <div class="qrt-logo">
+          <img src="img/logo.svg" alt="Quarty">
+        </div>
+        <div id="preloader" class="qrt-preloader-load"></div>
+      </div>
+    </div>
+    <div id="cursor" class="qrt-cursor">
+      <div></div>
+      <div class="qrt-follower"><i class="fas fa-circle-notch"></i></div>
+    </div>
+    <div class="qrt-top-bar">
+      <a href="home-slider.html" class="qrt-symbol qrt-cursor-scale qrt-anima-link"><img src="img/logo-sm.svg" alt="Symbol"></a>
+      <a href="home-slider.html" class="qrt-logo qrt-cursor-color qrt-cursor-scale qrt-anima-link">
+        <img src="img/logo.svg" alt="Quarty">
+      </a>
+      <div class="qrt-menu">
+        <div id="qrt-dynamic-menu" class="qrt-dynamic-menu">
+          <nav>
+            <ul>
+              <li>
+                <a class="qrt-mobile-fix" href="home-video.html">Home</a>
+                <ul>
+                  <li><a href="home-slider.html">Home slider</a></li>
+                  <li><a href="home-video.html">Home video</a></li>
+                  <li><a href="home-image.html">Home image</a></li>
+                  <li><a href="home-combined.html">Home combined</a></li>
+                  <li><a href="home-classic.html">Home classic</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="qrt-mobile-fix" href="about-us.html">About</a>
+                <ul>
+                  <li><a href="about-us.html">About us</a></li>
+                  <li><a href="about-me.html">About me</a></li>
+                  <li><a href="about-us-classic.html">About us classic</a></li>
+                  <li><a href="about-me-classic.html">About me classic</a></li>
+                </ul>
+              </li>
+              <li class="current-menu-item">
+                <a class="qrt-mobile-fix" href="portfolio-fs-masonry-1.html">Portfolio</a>
+                <ul>
+                  <li><a href="portfolio-half-masonry-1.html">Half masonry</a></li>
+                  <li><a href="portfolio-half-masonry-2.html">Half masonry 2</a></li>
+                  <li><a href="portfolio-half-grid-1-col.html">Half grid 1 column</a></li>
+                  <li><a href="portfolio-half-grid-2-col.html">Half grid 2 column</a></li>
+                  <li><a href="portfolio-fs-masonry-1.html">fullscreen masonry</a></li>
+                  <li><a href="portfolio-fs-masonry-2.html">fullscreen masonry 2</a></li>
+                  <li><a href="portfolio-fs-grid-3-col.html">fullscreen grid 3 column</a></li>
+                  <li><a href="portfolio-fs-grid-2-col.html">fullscreen grid 2 column</a></li>
+                  <li><a href="single-work-1.html">Single work 1</a></li>
+                  <li class="qrt-this-page"><a href="single-work-2.html">Single work 2</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="qrt-mobile-fix" href="contact.html">Contact</a>
+                <ul>
+                  <li><a href="contact.html">Contact type 1</a></li>
+                  <li><a href="contact-2.html">Contact type 2</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="qrt-mobile-fix" href="blog-list.html">Blog</a>
+                <ul>
+                  <li><a href="blog-list.html">Blog list</a></li>
+                  <li><a href="publication.html">Publication</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="qrt-buttons">
+        <a href="contact-2.html" class="qrt-btn qrt-btn-md qrt-btn-color qrt-send-request qrt-anima-link qrt-mr-20"><span>Send request</span></a>
+        <div class="qrt-menu-btn qrt-cursor-color qrt-cursor-scale"><span></span></div>
+        <div class="qrt-search-btn qrt-cursor-color qrt-cursor-scale"><i class="fas fa-search"></i></div>
+        <div class="qrt-info-btn qrt-cursor-color qrt-cursor-scale"><span></span></div>
+      </div>
+      <div class="qrt-search">
+        <form>
+          <input type="text" placeholder="Enter search query">
+        </form>
+      </div>
+      <div class="qrt-info" id="qrt-scroll-info">
+        <div class="qrt-info-frame">
+          <ul class="qrt-table">
+            <li>
+              <h5>Country</h5><span>Canada</span>
+            </li>
+            <li>
+              <h5>City</h5><span>Toronto</span>
+            </li>
+            <li>
+              <h5>Street</h5><span>North Avenue 31B, </span>
+            </li>
+            <li>
+              <h5>Email</h5><span><a class="qrt-cursor-scale qrt-cursor-color" href="mailto:quarty.inbox@mail.com" data-no-swup>quarty.inbox@mail.com</a></span>
+            </li>
+            <li>
+              <h5>Phone</h5><span><a class="qrt-cursor-scale qrt-cursor-color" href="#." data-no-swup>+9 3(049) 482 95 23</a></span>
+            </li>
+          </ul>
+          <div class="qrt-divider"></div>
+          <div class="qrt-social-links">
+            <div class="qrt-social-links">
+              <h5 class="qrt-mb-40">We are social</h5>
+              <ul class="qrt-social-list">
+                <li><a href="#." class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-behance"></i></a></li>
+                <li><a href="#." class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-dribbble"></i></a></li>
+                <li><a href="#." class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#." class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="qrt-divider"></div>
+          <div class="qrt-instagram">
+            <h5 class="qrt-mb-40">Instagram</h5>
+            <div class="qrt-instagram-frame">
+              <a href="#." class="qrt-instagram-item qrt-cursor-scale">
+                <div class="qrt-instagram-image-frame">
+                  <img src="img/projects/thumbnails/7.jpg" alt="instagram post">
+                </div>
+              </a>
+              <a href="#." class="qrt-instagram-item qrt-cursor-scale">
+                <div class="qrt-instagram-image-frame">
+                  <img src="img/projects/thumbnails/8.jpg" alt="instagram post">
+                </div>
+              </a>
+              <a href="#." class="qrt-instagram-item qrt-cursor-scale">
+                <div class="qrt-instagram-image-frame">
+                  <img src="img/projects/thumbnails/9.jpg" alt="instagram post">
+                </div>
+              </a>
+              <a href="#." class="qrt-instagram-item qrt-cursor-scale">
+                <div class="qrt-instagram-image-frame">
+                  <img src="img/projects/thumbnails/10.jpg" alt="instagram post">
+                </div>
+              </a>
+              <a href="#." class="qrt-instagram-item qrt-cursor-scale">
+                <div class="qrt-instagram-image-frame">
+                  <img src="img/projects/thumbnails/11.jpg" alt="instagram post">
+                </div>
+              </a>
+              <a href="#." class="qrt-instagram-item qrt-cursor-scale">
+                <div class="qrt-instagram-image-frame">
+                  <img src="img/projects/thumbnails/12.jpg" alt="instagram post">
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="qrt-divider"></div>
+          <h5 class="qrt-mb-40">Latest Publications</h5>
+          <div class="qrt-post-frame qrt-sm-post">
+            <a href="publication.html" class="qrt-post-thumb qrt-cursor-scale qrt-anima-link">
+              <img src="img/blog/1.jpg" alt="thumbnail">
+            </a>
+            <div class="qrt-post-descr">
+              <div>
+                <h4 class="qrt-cursor-color qrt-post-title"><a href="publication.html" class="qrt-anima-link">Architecture of Observation Towers</a></h4>
+                <div class="qrt-port-short-text">It seems to be human nature to enjoy a view, getting the higher ground and taking in our surroundings has become a significant aspect of architecture across the world. Observation towers which allow
+                  visitors to climb and observe their surroundings, provide a chance to take in the beauty of the land while at the same time adding something unique and impressive to the landscape.</div>
+              </div>
+            </div>
+          </div>
+          <div class="qrt-post-frame qrt-sm-post">
+            <a href="publication.html" class="qrt-post-thumb qrt-cursor-scale qrt-anima-link">
+              <img src="img/blog/2.jpg" alt="thumbnail">
+            </a>
+            <div class="qrt-post-descr">
+              <div>
+                <h4 class="qrt-cursor-color qrt-post-title"><a href="publication.html" class="qrt-anima-link">Model Making In Architecture</a></h4>
+                <div class="qrt-port-short-text">The importance of model making in architecture could be thought to have reduced in recent years. With the introduction of new and innovative architecture design technology, is there still a place for
+                  model making in architecture? Stanton Williams, director at Stirling Prize-winning practice, Gavin Henderson, believes that it’s more important than ever.</div>
+              </div>
+            </div>
+          </div>
+          <div class="qrt-post-frame qrt-sm-post">
+            <a href="publication.html" class="qrt-post-thumb qrt-cursor-scale qrt-anima-link">
+              <img src="img/blog/5.jpg" alt="thumbnail">
+            </a>
+            <div class="qrt-post-descr">
+              <div>
+                <h4 class="qrt-cursor-color qrt-post-title"><a href="publication.html" class="qrt-anima-link">Can Skyscrapers Be Sustainable</a></h4>
+                <div class="qrt-port-short-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, id, reprehenderit earum quidem error hic deserunt asperiores suscipit. Magni doloribus, ab cumque modi quidem doloremque nostrum quam
+                  tempora, corporis explicabo nesciunt accusamus ad architecto sint voluptatibus tenetur ipsa hic eius.</div>
+              </div>
+            </div>
+          </div>
+          <div class="qrt-divider"></div>
+          <div class="qrt-subscribe">
+            <h5 class="qrt-mb-40">Subscribe our newsletter</h5>
+            <form>
+              <input type="text" placeholder="Email">
+              <button type="submit" class="qrt-btn qrt-btn-sm"><i class="far fa-paper-plane"></i></button>
+            </form>
+          </div>
+          <div class="qrt-divider"></div>
+          <div class="qrt-copy">
+            <!-- author ( Please! Do not delete it. You are awesome! :) -->
+            <div>© Late 2020 Quarty.<br>Design by:&#160; <a class="qrt-cursor-scale qrt-cursor-color" href="https://themeforest.net/user/millerdigitaldesign" target="_blank">Nazar Miller</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="qrt-left-bar">
+      <div class="qrt-current-page-title"></div>
+      <div class="qrt-change-language">
+        <a href="#." class="qrt-leng qrt-cursor-color qrt-cursor-scale">fr</a>
+        <a href="#." class="qrt-leng qrt-active">En</a>
+      </div>
+    </div>
+    <div class="qrt-curtain"></div>
+    <div id="qrt-dynamic-content" class="qrt-dynamic-content">
+      <div class="qrt-content" id="qrt-scroll-content">
+        <div class="qrt-half-content-frame">
+          <div class="qrt-left">
+
+            <div class="row">
+              <div class="col-lg-12">
+
+                <h2 class="qrt-mb-40">Sunset houre</h2>
+
+                <div class="qrt-page-cover">
+                  <img src="img/projects/thumbnails/1.jpg" alt="sunset house">
+                  <div class="qrt-about-info qrt-right-position">
+                    <div class="qrt-cover-info">
+                      <ul class="qrt-table">
+                        <li>
+                          <h5 class="qrt-white">Order Date:</h5><span>Canada</span>
+                        </li>
+                        <li>
+                          <h5 class="qrt-white">Final Date:</h5><span>Toronto</span>
+                        </li>
+                        <li>
+                          <h5 class="qrt-white">Client:</h5><span>Envato Market</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="qrt-just-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis expedita, modi quibusdam vitae. Accusamus nisi dolorum laborum, exercitationem fugiat obcaecati repudiandae, doloremque enim magnam officia iusto cupiditate
+                    voluptatem quidem ipsum ex maxime quae non facilis inventore dignissimos ut ea expedita velit, corrupti dicta! Quae fugit reprehenderit illum tenetur saepe magni perspiciatis, similique ea eligendi sit quis fugiat, possimus
+                    voluptatibus eius! Odio quas at, nihil nobis blanditiis voluptas libero maiores rerum!</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis culpa illo optio libero nam, error amet modi explicabo quaerat ratione!</p>
+                </div>
+
+                <img src="img/projects/thumbnails/1-2.jpg" alt="work cover" class="qrt-just-img">
+
+                <div class="qrt-just-text">
+                  <p>Facilis inventore dignissimos ut ea expedita velit, corrupti dicta! Quae fugit reprehenderit illum tenetur saepe magni perspiciatis, similique ea eligendi sit quis fugiat, possimus
+                    voluptatibus eius! Odio quas at, nihil nobis blanditiis voluptas libero maiores rerum!</p>
+                  <p>Eerror amet modi explicabo quaerat ratione!</p>
+                </div>
+
+                <img src="img/projects/thumbnails/1-8.jpg" alt="work cover" class="qrt-just-img">
+                <div class="qrt-just-text">
+
+                  <p>Eerror amet modi explicabo quaerat ratione!</p>
+                </div>
+                <img src="img/projects/thumbnails/1-5.jpg" alt="work cover" class="qrt-just-img">
+                <div class="qrt-just-text">
+
+                  <p>Accusamus nisi dolorum laborum, exercitationem fugiat obcaecati repudiandae</p>
+                  <p>Consectetur adipisicing elit. Officiis expedita, modi quibusdam vitae. Accusamus nisi dolorum laborum, exercitationem fugiat obcaecati repudiandae, doloremque enim magnam officia iusto cupiditate
+                    voluptatem quidem ipsum ex maxime quae non facilis inventore dignissimos ut ea expedita velit, corrupti dicta! Quae fugit reprehenderit illum tenetur saepe magni perspiciatis, similique ea eligendi sit quis fugiat, possimus
+                    voluptatibus eius! Odio quas at, nihil nobis blanditiis voluptas libero maiores rerum!</p>
+                  <p>Perferendis culpa illo optio libero nam, error amet modi explicabo quaerat ratione!</p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="qrt-divider qrt-space-fix"></div>
+
+            <div class="row">
+              <div class="col-lg-12">
+
+                <div class="swiper-container qrt-brands-slider" style="overflow: visible">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="img/brands/b1.svg" alt="brand">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/brands/b2.svg" alt="brand">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/brands/b3.svg" alt="brand">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/brands/b4.svg" alt="brand">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/brands/b5.svg" alt="brand">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/brands/b6.svg" alt="brand">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/brands/b7.svg" alt="brand">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="qrt-call-to-action">
+                  <h4>Do you have a project?</h4><a class="qrt-btn qrt-btn-sm qrt-btn-color qrt-cursor-scale qrt-anima-link" href="contact.html"><span>Let's discuss</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="fixed" class="qrt-right">
+            <div class="qrt-half-banner qrt-left-align qrt-animated-show">
+              <div class="qrt-image-frame">
+                <img src="img/banners/banner2.jpg" alt="banner">
+              </div>
+              <div class="qrt-overlay">
+                <div class="qrt-scroll-hint"><span></span></div>
+                <div class="qrt-banner-title">
+                  <h2 class="qrt-white qrt-mb-10">Our Works</h2>
+                  <div class="qrt-divider-2"></div>
+                  <div class="qrt-text qrt-white qrt-mb-20">Dolor sit amet, consectetur adipisicing elit. <br>Vel excepturi, earum inventore.</div><a href="contact.html" class="qrt-btn qrt-btn-md qrt-btn-color qrt-anima-link"><span>Get in
+                      touch</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jquery js -->
+  <script src="js/plugins/jquery.min.js"></script>
+  <!-- anime js -->
+  <script src="js/plugins/anime.min.js"></script>
+  <!-- swiper js -->
+  <script src="js/plugins/swiper.min.js"></script>
+  <!-- progressbar js -->
+  <script src="js/plugins/progressbar.min.js"></script>
+  <!-- smooth scrollbar js -->
+  <script src="js/plugins/smooth-scrollbar.min.js"></script>
+  <!-- overscroll js -->
+  <script src="js/plugins/overscroll.min.js"></script>
+  <!-- isotope js -->
+  <script src="js/plugins/isotope.min.js"></script>
+  <!-- fancybox js -->
+  <script src="js/plugins/fancybox.min.js"></script>
+  <!-- swup js -->
+  <script src="js/plugins/swup.min.js"></script>
+  <!-- mapbox js -->
+  <script src="js/plugins/mapbox.min.js"></script>
+
+  <!-- main js -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

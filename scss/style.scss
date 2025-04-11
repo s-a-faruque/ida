@@ -1,0 +1,83 @@
+/* -------------------------------------------
+
+Name: 		Quarty
+Version:  1.0
+Author:		Nazar Miller (millerDigitalDesign)
+Portfolio:  https://themeforest.net/user/millerdigitaldesign/portfolio?ref=MillerDigitalDesign
+
+p.s. I am available for Freelance hire (UI design, web development). mail: miller.themes@gmail.com
+
+------------------------------------------- */
+/*--------------------------------------------
+
+0. color variable
+1. common
+      - fonts
+      - variables
+      - text defaults
+      - title defaults
+      - quote
+      - divider
+      - buttons
+      - space
+2. frame
+      - preloader
+      - top bar
+      - symbol
+      - logo
+      - menu
+      - top bar buttons
+      - search
+      - info bar
+      - left bar
+      - curtain
+      - content
+      - cursor
+      - frame (after 992px)
+      - frame (after 768px)
+3. banners
+      - half banner
+      - half banner (after 992px)
+      - half banner (after 768px)
+4. transitions
+      - menu in animation
+      - menu out animation
+      - content in animation
+      - content out animation
+5. content
+      - about cover
+      - counter up
+      - team
+      - prices
+      - testimonials
+      - brands
+      - call to action
+      - icon box
+      - contact
+      - blog card
+      - table
+      - instagram
+      - social links
+      - subscribe
+      - copyright
+6. portfolio
+      - portfolio item
+      - portfolio item (after 768px)
+      - portfolio grid sizes
+      - masonry grid
+      - filter
+      - portfolio (after 1200px)
+7. plugins customization
+      - smooth scrollbar
+      - swiper
+      - fancybox
+      - mapbox
+--------------------------------------------*/
+@import 'orange'; //red //orange //green //blue //pink
+@import 'common';
+@import 'light-frame'; //light-frame //dark-frame-frame
+@import 'banners';
+@import 'transitions';
+@import 'content';
+@import 'portfolio';
+@import 'plugins-custom';
