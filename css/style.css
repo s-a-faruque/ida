@@ -1893,7 +1893,7 @@ content
 .qrt-counter-frame {
   margin-bottom: 40px; }
   .qrt-counter-frame .qrt-counter-box .qrt-counter {
-    display: block;
+    display: inline-block;
     font-size: 22px;
     font-weight: 800;
     margin-bottom: 10px;
