@@ -1,0 +1,246 @@
+/* ----- menu in animation ----- */
+.qrt-app .qrt-top-bar .qrt-menu .qrt-dynamic-menu {
+  pointer-events: all;
+  opacity: 1;
+  transition: 0.4s ease-in-out;
+
+  & nav {
+    & ul {
+      & li {
+        &.current-menu-item {
+          &:after {
+            content: '';
+            width: 135%;
+            transition: 0.4s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
+/* ----- menu out animation ----- */
+html.is-animating .qrt-app .qrt-top-bar .qrt-menu .qrt-dynamic-menu {
+  pointer-events: none;
+  opacity: 0.999;
+  transition: 0.4s ease-in-out;
+
+  & nav {
+    & ul {
+      & li {
+        &.current-menu-item {
+          &:after {
+            content: '';
+            width: 0;
+          }
+        }
+
+        & ul {
+          opacity: 0;
+          transform: translateY(10px);
+          transition: 0.4s ease-in-out;
+        }
+      }
+    }
+  }
+}
+/* ----- content in animation ----- */
+.qrt-dynamic-content {
+  pointer-events: all;
+  position: relative;
+  opacity: 1;
+  transition: 0.4s ease-in-out;
+
+  & .qrt-banner,
+  & .qrt-half-banner {
+    transform: translateY(0);
+    transition: 0.4s ease-in-out;
+
+    & .qrt-video-background,
+    & img {
+      transform: translateX(0);
+      transition: 0.4s ease-in-out;
+      transition-delay: 0.4s;
+    }
+
+    & .qrt-overlay {
+      & .qrt-scroll-hint {
+        opacity: 1;
+        transition: 0.4s ease-in-out;
+        transition-delay: 0.8s;
+      }
+
+      & .qrt-banner-title {
+        opacity: 1;
+        transition: 0.4s ease-in-out;
+        transition-delay: 0.8s;
+      }
+    }
+  }
+
+  & .qrt-slider-navigation {
+    transform: translateY(0);
+    transition: 0.4s ease-in-out;
+    transition-delay: 0.8s;
+  }
+
+  & .qrt-main-slider,
+  & .qrt-main-slider-onepage {
+    transform: translateY(0);
+    transition: 0.4s ease-in-out;
+
+    & .qrt-project-cover {
+      & .video-background {
+        transform: translateX(0);
+        transition: 0.4s ease-in-out;
+        transition-delay: 0.4s;
+      }
+
+      & .qrt-image-frame {
+        transform: translateX(0);
+        transition: 0.4s ease-in-out;
+        transition-delay: 0.4s;
+      }
+
+      & .qrt-overlay {
+        & .qrt-banner-title {
+          opacity: 1;
+          transition: 0.4s ease-in-out;
+          transition-delay: 0.8s;
+        }
+      }
+    }
+  }
+
+  & .qrt-map-frame {
+    transform: translateY(0);
+    transition: 0.4s ease-in-out;
+
+    & .qrt-map {
+      opacity: 1;
+      transform: scale(1);
+      transition: 0.4s ease-in-out;
+      transition-delay: 0.4s;
+    }
+  }
+
+  & .qrt-about-me-cover,
+  & .qrt-page-cover {
+    width: 100%;
+    transition: 0.4s ease-in-out;
+
+    & img {
+      opacity: 1;
+      transition: 0.4s ease-in-out;
+      transition-delay: 0.4s;
+    }
+
+    & .qrt-about-info,
+    & .qrt-hint-frame {
+      transform: translateY(0);
+      transition: 0.4s ease-in-out;
+      transition-delay: 0.6s;
+    }
+  }
+}
+
+.qrt-app .qrt-left-bar .qrt-current-page-title {
+  padding-right: 40px;
+  opacity: 1;
+  letter-spacing: 2px;
+  transition: 0.4s ease-in-out;
+}
+/* ----- content out animation ----- */
+html.is-animating .qrt-dynamic-content {
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+  transition-delay: 1s;
+
+  & .qrt-banner,
+  & .qrt-half-banner {
+    transform: translateY(-100%);
+    transition-delay: 0.8s;
+
+    & .qrt-video-background,
+    & img {
+      transform: translateX(-100%);
+      transition-delay: 0.4s;
+    }
+
+    & .qrt-overlay {
+      & .qrt-scroll-hint {
+        opacity: 0;
+        transition-delay: 0s;
+      }
+
+      & .qrt-banner-title {
+        opacity: 0;
+        transition-delay: 0s;
+      }
+    }
+  }
+
+  & .qrt-slider-navigation {
+    transform: translateY(100%);
+    transition-delay: 0s;
+  }
+
+  & .qrt-main-slider,
+  & .qrt-main-slider-onepage {
+    transform: translateY(-100%);
+    transition-delay: 0.8s;
+
+    & .qrt-project-cover {
+      & .video-background {
+        transform: translateX(-100%);
+        transition-delay: 0.4s;
+      }
+
+      & .qrt-image-frame {
+        transform: translateX(-100%);
+        transition-delay: 0.4s;
+      }
+
+      & .qrt-overlay {
+        & .qrt-banner-title {
+          opacity: 0;
+          transition-delay: 0s;
+        }
+      }
+    }
+  }
+
+  & .qrt-map-frame {
+    transform: translateY(-100%);
+    transition-delay: 0.8s;
+
+    & .qrt-map {
+      opacity: 0;
+      transform: scale(.5);
+      transition-delay: 0s;
+    }
+  }
+
+  & .qrt-about-me-cover,
+  & .qrt-page-cover {
+    width: 0;
+    transition-delay: 0.8s;
+
+    & img {
+      opacity: 0;
+    }
+
+    & .qrt-about-info,
+    & .qrt-hint-frame {
+      transform: translateY(100%);
+      transition-delay: 0s;
+    }
+  }
+}
+
+html.is-animating .qrt-app .qrt-left-bar .qrt-current-page-title {
+  padding-right: 50px;
+  opacity: 0;
+  letter-spacing: 6px;
+  transition: 0.4s ease-in-out;
+  transition-delay: 0.4s;
+}
