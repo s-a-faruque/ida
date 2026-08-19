@@ -1,0 +1,44 @@
+---
+permalink: "/projects/"
+title: Projects
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
+  <style>
+    .project-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+    .project-card { border: 1px solid #e0e0e0; padding: 1rem; border-radius: 8px; }
+    .project-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="/">← Home</a>
+    <h1>{{ title }}</h1>
+  </header>
+
+  <main>
+    <div class="project-grid">
+      {% for project in projects %}
+        <article class="project-card">
+          {% if project.heroImage %}
+            <img src="{{ project.heroImage.url }}" alt="{{ project.heroImage.alt }}">
+          {% endif %}
+
+          <h2>
+            <a href="/projects/{{ project.id }}/">{{ project.title }}</a>
+          </h2>
+
+          <p><strong>Status:</strong> {{ project.status }}</p>
+
+          {% if project.description %}
+            <p>{{ project.description }}</p>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+  </main>
+</body>
+</html>

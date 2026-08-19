@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# 11ty Default Build Output
+_site/
+
+# Local Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
