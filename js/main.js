@@ -94,8 +94,8 @@ $(function() {
   const options = {
     containers: ['#qrt-dynamic-content', '#qrt-dynamic-menu'],
     animateHistoryBrowsing: true,
-    linkSelector: '.qrt-menu a:not([data-no-swup]), .qrt-anima-link:not([data-no-swup])',
-    animationSelector: '[class="qrt-dynamic-content"]'
+    linkSelector: 'a[href]:not([data-no-swup]):not([target="_blank"]):not([href^="mailto:"]):not([href^="tel:"]):not([href^="#"]):not([href^="https://"]):not([href^="http://"]):not([href^="//"]), .qrt-anima-link:not([data-no-swup])',
+    animationSelector: '.qrt-dynamic-content'
   };
 
   const swup = new Swup(options);
