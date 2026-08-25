@@ -1,0 +1,27 @@
+<div class="qrt-top-bar">
+  <a href="/" class="qrt-logo qrt-cursor-color qrt-cursor-scale">
+    <img src="/img/ida-logo.png" alt="IDA">
+  </a>
+  <div class="qrt-menu">
+    <nav>
+      <ul>
+        <li {% if page.url == "/" %}class="current-menu-item"{% endif %}>
+          <a href="/">Home</a>
+        </li>
+        <li {% if page.url == "/about-us/" %}class="current-menu-item"{% endif %}>
+          <a href="/about-us/">About</a>
+        </li>
+        <li {% if page.url == "/portfolio-api/" %}class="current-menu-item"{% endif %}>
+          <a href="/portfolio-api/">Portfolio</a>
+        </li>
+        <li {% if page.url == "/contact/" %}class="current-menu-item"{% endif %}>
+          <a href="/contact/">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="qrt-buttons">
+    <div class="qrt-menu-btn qrt-cursor-color qrt-cursor-scale"><span></span></div>
+    <div class="qrt-info-btn qrt-cursor-color qrt-cursor-scale"><span></span></div>
+  </div>
+</div>
